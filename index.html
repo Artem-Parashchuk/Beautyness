@@ -34,20 +34,26 @@
             class="header__logo py-38"
             href="./index.html"
           >
-            <img
-              class="header__logo-img"
-              src="./images/icons/Logo.svg"
-              alt="Logo icon"
-            />
-            Beautyness
+            <svg
+              class="header__logo-svg"
+              width="191"
+              height="35"
+            >
+              <use href="./images/icons/icons.svg#logo-icon"></use>
+            </svg>
           </a>
           <a
             class="header__tel py-38"
             href="tel:+221234567890"
-            ><img
-              class="header__tel-img"
-              src="./images/icons/phone.svg"
-            />Call Us - (+22) 123 456 7890</a
+          >
+            <svg
+              class="header__tel-svg"
+              width="21"
+              height="21"
+            >
+              <use href="./images/icons/icons.svg#phone-icon"></use>
+            </svg>
+            Call Us - (+22) 123 456 7890</a
           >
 
           <ul class="header__nav-list">
@@ -62,8 +68,15 @@
               <a
                 class="head__nav-link py-38"
                 href=""
-                >Pages</a
-              >
+                >Pages
+                <svg
+                  class="head__nav-arrow"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons/icons.svg#header-arrow-icon"></use>
+                </svg>
+              </a>
             </li>
             <li class="header__nav-item">
               <a
@@ -92,12 +105,14 @@
             <li class="header__social-item">
               <a
                 class="header__social-link py-38"
-                href=""
+                href="https://www.facebook.com/"
+                target="_blank"
               >
                 <svg
                   class="header__social-icon"
                   width="18"
                   height="18"
+                aria-label="Facebook"
                 >
                   <use href="./images/icons/icons.svg#icon-facebook-icon"></use>
                 </svg>
@@ -106,12 +121,14 @@
             <li class="header__social-item">
               <a
                 class="header__social-link py-38"
-                href=""
+                href="https://www.twitter.com/"
+                target="_blank"
               >
                 <svg
                   class="header__social-icon"
                   width="19"
                   height="19"
+                aria-label="Twitter"
                 >
                   <use href="./images/icons/icons.svg#icon-twitter-icon"></use>
                 </svg>
@@ -120,12 +137,14 @@
             <li class="header__social-item">
               <a
                 class="header__social-link py-38"
-                href=""
+                href="https://www.linkedin.com/"
+                target="_blank"
               >
                 <svg
                   class="header__social-icon"
                   width="19"
                   height="19"
+                aria-label="Linkedin"
                 >
                   <use href="./images/icons/icons.svg#icon-linkedin-icon"></use>
                 </svg>
@@ -133,91 +152,96 @@
             </li>
           </ul>
         </nav>
+
         <a
           class="header__redirect-link"
           href=""
-          ><img
+        >
+          <svg
             class="header__redirect-logo"
-            src="./images/icons/header-btn-icon.svg"
-            alt=""
-          />
+            width="14"
+            height="15"
+          >
+            <use href="./images/icons/icons.svg#header-btn-icon"></use>
+          </svg>
           Reservation</a
         >
       </div>
     </header>
     <main>
       <!-- -------Hero----------- -->
-      <!-- <section class="hero">
+      <section class="hero">
+        <!-- <div class="left-side">
             <div class="container">
-              <div class="hero-text">
-                <p>
+              
+                <h1>
 
-                </p>
-              </div>
-              <div class="hero-img">
-
-              </div>
+                </h1>
+                <h2></h2>
+          
             </div>
-          </section> -->
+            <div class="right-side">
+        </div> -->
+      </section>
       <!-- -------/Hero----------- -->
       <!-- -------------------Services------------------- -->
       <section class="services">
-          <div class="container">
-            <h2 class="visually-hidden">Our services</h2>
-            <ul class="services__list">
-              <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/services1.jpg"
-                  alt="Spa and massage"
-                />
-                <h3 class="services__subtitle">Spa & Massage</h3>
-                <p class="services__text">
-                  If you are going to use a passage offer Lorem Ipsum, you need
-                  to be sure hidden in the middle of text.
-                </p>
-                <a
-                  class="services__link"
-                  href=""
-                  >Read more</a
-                >
-              </li>
-              <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/services2.jpg"
-                  alt="Spa and massage"
-                />
-                <h3 class="services__subtitle">Hair & Beauty</h3>
-                <p class="services__text">
-                  If you are going to use a passage offer Lorema Ipsum, you need
-                  to be sure hidden in the middle of text.
-                </p>
-                <a
-                  class="services__link"
-                  href=""
-                  >Read more</a
-                >
-              </li>
-              <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/services3.jpg"
-                  alt="Spa and massage"
-                />
-                <h3 class="services__subtitle">Body Treatments</h3>
-                <p class="services__text">
-                  If you are going to use a passage offer Lorem Ipsum, you need
-                  to be sure hidden in the middle of text.
-                </p>
-                <a
-                  class="services__link"
-                  href=""
-                  >Read more</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+          <h2 class="visually-hidden">Our services</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <img
+                class="services__img"
+                src="./images/services1.jpg"
+                alt="Spa and massage"
+              />
+              <h3 class="services__subtitle">Spa & Massage</h3>
+              <p class="services__text">
+                If you are going to use a passage offer Lorem Ipsum, you need to
+                be sure hidden in the middle of text.
+              </p>
+              <a
+                class="services__link"
+                href=""
+                >Read more</a
+              >
+            </li>
+            <li class="services__item">
+              <img
+                class="services__img"
+                src="./images/services2.jpg"
+                alt="Spa and massage"
+              />
+              <h3 class="services__subtitle">Hair & Beauty</h3>
+              <p class="services__text">
+                If you are going to use a passage offer Lorema Ipsum, you need
+                to be sure hidden in the middle of text.
+              </p>
+              <a
+                class="services__link"
+                href=""
+                >Read more</a
+              >
+            </li>
+            <li class="services__item">
+              <img
+                class="services__img"
+                src="./images/services3.jpg"
+                alt="Spa and massage"
+              />
+              <h3 class="services__subtitle">Body Treatments</h3>
+              <p class="services__text">
+                If you are going to use a passage offer Lorem Ipsum, you need to
+                be sure hidden in the middle of text.
+              </p>
+              <a
+                class="services__link"
+                href=""
+                >Read more</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- -------------------/Services------------------- -->
 
@@ -226,7 +250,7 @@
           <div class="about-description description">
             <h2 class="description__title">About Us</h2>
             <h3 class="description__title-secondary">
-              The Beauty is about being Comfortable in your own skin!
+              The Beauty is about being&nbsp;Comfortable in&nbsp;your own skin!
             </h3>
             <p class="description__text">
               There are many variations of passages of Lorem Ipsum available,
@@ -236,35 +260,42 @@
             </p>
             <ul class="description__list">
               <li class="description__item">
-                <img
-                  class="description__img"
-                  src="./images/icons/about-expert.svg"
-                  alt="Beauty experts icon" width="48" height="72"
-                />
+                <svg class="description__img" width="49" height="72">
+                  <use href="./images/icons/icons.svg#about-expert-icon"></use>
+                </svg>
                 <p class="description__item-text">Beauty Experts</p>
               </li>
+
               <li class="description__item">
-                <img
-                  class="description__img"
-                  src="./images/icons/about-services.svg"
-                  alt="Beauty experts icon" width="73" height="74"
-                />
+                <svg class="description__img" width="73" height="74">
+                  <use href="./images/icons/icons.svg#about-services-icon"></use>
+                </svg>
                 <p class="description__item-text">Great Services</p>
               </li>
+
               <li class="description__item">
-                <img
-                  class="description__img"
-                  src="./images/icons/about-genuine.svg"
-                  alt="100%
-                  Genuine icon" width="65" height="78"
-                />
+                <svg class="description__img"   width="65"
+                height="78">
+                  <use href="./images/icons/icons.svg#about-genuine-icon"></use>
+                </svg>
+  
                 <p class="description__item-text">100% Genuine</p>
               </li>
             </ul>
           </div>
           <div class="about__bg">
-            <img class="about__bg-img" src="./images/about-background.jpg" alt="Background image" width="500">
-            <img class="about__bg-photo" src="./images/about-img.jpg" alt="">
+
+            <!-- <img
+              class="about__bg-img"
+              src="./images/about-background.jpg"
+              alt="Background image"
+              width="500"
+            /> -->
+            <img
+              class="about__bg-photo"
+              src="./images/about-img.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>

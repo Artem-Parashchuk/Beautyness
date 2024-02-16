@@ -1,3 +1,4 @@
+/*#region Reset--------------------------------*/
 html,
 body,
 div,
@@ -86,7 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -122,8 +123,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* #endregion Reset-----------------------------*/
 
-/* ---------------------------------------------- */
+/* #region Base styles----------------------------- */
 body {
   background-color: #fff;
   font-family: "Manrope", sans-serif;
@@ -161,7 +163,9 @@ img {
 .py-38 {
   padding: 38px 0;
 }
-/* --------------------------Header------------------ */
+/* #endregion Base styles----------------------------- */
+
+/* #region Header-------------------------- */
 .header-container {
   max-width: 1830px;
   margin: 0 auto;
@@ -174,13 +178,7 @@ img {
   align-items: center;
 }
 .header__logo {
-  display: inline-flex;
-  font-family: "Playfair Display", sans-serif;
   margin-right: 46px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.25;
-  color: #141414;
 }
 .header__logo-img {
   margin-right: 12px;
@@ -195,6 +193,9 @@ img {
   letter-spacing: -0.01em;
   color: #141414;
   transition: color 0.25s ease-in;
+}
+.header__tel-svg {
+  margin-right: 12px;
 }
 .header__tel:hover {
   color: #5c8692;
@@ -216,6 +217,9 @@ img {
 .head__nav-link:hover {
   color: #5c8692;
 }
+.head__nav-arrow {
+  vertical-align: middle;
+}
 .header__social-list {
   display: flex;
   align-items: center;
@@ -235,8 +239,6 @@ img {
 .header__social-icon:hover {
 }
 .header__redirect-link {
-  display: flex;
-  position: relative;
   text-transform: uppercase;
   max-width: 200px;
   padding: 16px 33px;
@@ -249,16 +251,17 @@ img {
   background-color: #5c8692;
 }
 .header__redirect-logo {
+  vertical-align: middle;
   margin-right: 12px;
 }
-
-/* --------------------------/Header------------------ */
+/* #endregion Header------------------------------- */
 
 /* --------------------------Hero------------------ */
 
 /* --------------------------/Hero------------------ */
 
-/* -----------------------Services--------------- */
+/* #region Services---------------------------- */
+
 .services {
   padding: 150px 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -320,9 +323,10 @@ img {
   background-color: #5c8692;
   color: #fff;
 }
-/* -----------------------/Services--------------- */
 
-/* -----------------------About------------------- */
+/* #endregion Services-------------------------- */
+
+/* #region About------------------------------ */
 .about {
   padding: 150px 0;
   box-shadow: 0 37px 60px 0 rgba(0, 0, 0, 0.02);
@@ -334,7 +338,7 @@ img {
   gap: 125px;
 }
 .about-description {
-  max-width: 700px;
+  max-width: 530px;
 }
 .description__title {
   margin-bottom: 10px;
@@ -347,7 +351,7 @@ img {
 }
 
 .description__title-secondary {
-  max-width: 429px;
+  max-width: 429 px;
   margin-bottom: 15px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
@@ -365,14 +369,16 @@ img {
   gap: 10px;
 }
 .description__item {
-  padding: 21px 11px;
+  padding: 21px 33px;
   background-color: #fff;
   border: 1px solid #1e2c30;
 }
 .description__img {
+  display: block;
   margin: 0 auto 15px;
 }
 .description__item-text {
+  max-width: 99px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -383,16 +389,17 @@ img {
 
 .about__bg {
   position: relative;
-  /* background-image: url("../images/about-img.jpg"); */
+  width: 500px;
+  background-color: #84a8b2;
+  background-image: url("../images/about-background.jpg");
+ 
+}
 
-}
-.about__bg-img {
-  position: relative;
-  background-color: #84A8B2;
-}
 .about__bg-photo {
   position: absolute;
   top: 37px;
   right: 46px;
-}
-/* -----------------------/About------------------- */
+  box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.2);
+
+} 
+/*#endregion About----------------------------- */

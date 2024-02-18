@@ -74,9 +74,9 @@
             <path d="M27.6364 28L0 55.6364V0.363647H27.6364V28Z" fill="white"/>
         </symbol>
         <symbol id="benefits-chek-icon" viewBox="0 0 90 90">
-<rect x="0.5" y="0.5" width="89" height="89" stroke="#1E2C30" stroke-dasharray="10 10"/>
-<rect x="5" y="5" width="80" height="80" fill="#5C8692"/>
-<path d="M59 36L39.75 55L31 46.3636" stroke="white" stroke-width="3" />
+            <path fill="#fff" stroke="#1E2C30" stroke-dasharray="10 10" d="M.5.5h89v89H.5z"/>
+            <path fill="#5C8692" d="M5 5h80v80H5z"/>
+            <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m34 44.4 10 9M61 33.4l-17 20"/>
         </symbol>
     </defs>
 </svg>
